@@ -1,5 +1,10 @@
 import random
 
+#Preconditions: User must input something, they cannot be blank spaces; 
+#Inputs must be valid integers
+#Postconditions: The program shall generate the number of random numbers requested; 
+#The program must print out these numbers, and display them to the user
+
 class RandomNumbers:
     def __init__(self):
         print("Hello! This programm will find you random numbers")
