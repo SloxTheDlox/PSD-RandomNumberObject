@@ -1,11 +1,17 @@
 import random
 
 class RandomNumbers:
-    print("Hello! This programm will find you random numbers")
+    def __init__(self):
+        print("Hello! This programm will find you random numbers")
 
-    def get_random_numbers(amount, minrange, maxrange):
+        self.amount = int(input("Submit how many numbers you want returned: "))
+        self.minrange = int(input("What is the lowest number you want? "))
+        self.maxrange = int(input("What is the highest range you want? "))
+
+        self.get_random_numbers(self.amount, self.minrange, self.maxrange)
+
+    def get_random_numbers(self, amount, minrange, maxrange):
         for number in range(amount):
             print(random.randint(minrange, maxrange))
 
-testing_tool = RandomNumbers
-testing_tool.get_random_numbers(3, 22, 24)
+testing_tool = RandomNumbers()
